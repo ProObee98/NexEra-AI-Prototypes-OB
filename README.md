@@ -6,8 +6,8 @@ Two AI-powered interactive prototypes built for NexEra's human training platform
 
 ## Live Demos
 
+- **Test 1 - 3D Asset Generator:** https://genuine-snickerdoodle-20089a.netlify.app/test1
 - **Test 2 - Avatar Controller:** https://chic-biscochitos-3bc652.netlify.app/
-- **Test 1 - 3D Asset Generator:** Coming soon
 
 ---
 
@@ -58,6 +58,7 @@ nexera-ai-prototypes/
       point.fbx
       salute.fbx
       safety.fbx
+    _redirects          # Netlify routing
   src/
     pages/
       Test1.jsx         # 3D Asset Pipeline
@@ -108,16 +109,16 @@ npm run dev
 ## Limitations & Next Steps
 
 **Current limitations:**
-- API keys are hardcoded for demo purposes (would use environment variables in production)
-- Sketchfab search returns general models, not always exact matches
-- Animation library is limited to 6 preset animations
+- Sketchfab search returns closest match, not always exact object
+- Animation library limited to 6 preset animations
+- API keys hardcoded for demo purposes
 
 **Next steps for NexEra platform:**
-- Add image upload support for Test 1 (GPT-4 Vision to identify object)
+- Add image upload support for Test 1 (vision AI to identify object)
 - Expand animation library with procedural generation
-- Store generated assets in cloud storage (S3) with caching
+- Store generated assets in cloud storage with caching
+- Add backend proxy to secure API keys properly
 - Add user authentication and session history
-- Build a backend proxy to secure API keys
 
 ---
 
